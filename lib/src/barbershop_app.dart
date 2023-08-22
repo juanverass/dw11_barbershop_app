@@ -25,6 +25,7 @@ class BarbershopApp extends StatelessWidget {
       customLoader: const BarbershopLoader(),
       builder: (asyncNavigatorObserver) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'DW Barbershop',
           theme: BarbershopTheme.themeData,
           navigatorObservers: [asyncNavigatorObserver],
